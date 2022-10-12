@@ -11,6 +11,16 @@
   </head>
 
   <body>
+    <nav class="navbar bg-light border-bottom">
+      <div class="container-fluid ">
+        <div class="navbar-header">
+          <%= link_to "Wikinimous", articles_path, class: "navbar-brand" %>
+        </div>
+        <div class="nav navbar-nav navbar-right">
+          <%= link_to "New Article", new_article_path, class: "btn btn-outline-dark border" %>
+        </div>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
